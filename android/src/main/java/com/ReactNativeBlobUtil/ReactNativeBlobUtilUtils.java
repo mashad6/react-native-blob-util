@@ -29,7 +29,7 @@ public class ReactNativeBlobUtilUtils {
         String result = null;
 
         try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
+            MessageDigest md = MessageDigest.getInstance("SHA-512");
             md.update(input.getBytes());
             byte[] digest = md.digest();
 
